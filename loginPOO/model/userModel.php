@@ -4,11 +4,11 @@ class userModel{
 
     static public function mdlUser($table, $data){
 
-        $search=conexBD::FunctionConex()->prepare("SELECT * FROM $table WHERE email: email");
-        $search=bindParam("email:", $data['email'], PDO::PARAM_STR);
+        $search=conexBD::FunctionConex()->prepare("SELECT * FROM usuario WHERE email = :email");
+        $search->bindParam("email:", $data['email'], PDO::PARAM_STR);
         $search->execute();
 
-        $user= search->fetch(PDO::FETCH_ASSOC);
+        $user= $search->fetch(PDO::FETCH_ASSOC);
 
         if ($user == false) {
             echo "usuario no encontrado";

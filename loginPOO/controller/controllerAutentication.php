@@ -8,8 +8,8 @@ class autenticationSystem{
             
             $table="usuario";
             $data=array(
-                "email"->$_POST['email'],
-                "password"->$_POST['password'],
+                "email"=>$_POST['email'],
+                "password"=>$_POST['password'],
             );
 
             $answer=userModel::mdlUser($table, $data);

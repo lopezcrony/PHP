@@ -3,7 +3,7 @@
 session_start();
 
 if ($_SESSION['fullname']=="") {
-    header("Location: page/login.php")
+    header("Location: page/login.php");
 }
 ?>
 

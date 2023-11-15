@@ -16,7 +16,6 @@
  
                         $access = autenticationSystem::verifyLogin();
 
-                        echo ($access);
                         if ($access == "ok") {
                           echo '
                           <script>
@@ -35,7 +34,7 @@
                         
                         ?>
  
-  <button type="submit" class="btn btn-primary">Iniciar</button><br><br>
+  <br><button type="submit" class="btn btn-primary">Iniciar</button><br><br>
   <a href="index.php?page=register" class="text-decoration-none">No tengo cuenta</button>
 </form>  
 

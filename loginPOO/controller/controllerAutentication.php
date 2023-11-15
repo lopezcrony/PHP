@@ -18,4 +18,20 @@ class autenticationSystem{
 
     }
 
+    static public function addUser(){
+        if (isset($_POST['document'])) {
+            $table="usuario";
+            $data= array(
+                "document"=>$_POST['document'],
+                "name"=>$_POST['nombreUsuario'],
+                "lastname"=>$_POST['apellidoUsuario'],
+                "email"=>$_POST['email'],
+                "password"=>$_POST['password'],
+            );
+
+            $answer=userModel::mdlRegister($table, $data);
+            return $answer;
+        }
+    }
+
 }

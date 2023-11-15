@@ -29,8 +29,7 @@
   <?php
   $register=autenticationSystem::addUser();
 
-  echo $register;
-
+  echo ($register);
   if ($register=='ok') {
          echo '
           <script>

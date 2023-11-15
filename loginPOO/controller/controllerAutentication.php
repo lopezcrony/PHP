@@ -22,11 +22,11 @@ class autenticationSystem{
         if (isset($_POST['document'])) {
             $table="usuario";
             $data= array(
-                "document"=>$_POST['document'],
-                "name"=>$_POST['nombreUsuario'],
-                "lastname"=>$_POST['apellidoUsuario'],
+                "nombreUsuario"=>$_POST['nombreUsuario'],
+                "apellidoUsuario"=>$_POST['apellidoUsuario'],
                 "email"=>$_POST['email'],
                 "password"=>$_POST['password'],
+                "document"=>$_POST['document'],
             );
 
             $answer=userModel::mdlRegister($table, $data);

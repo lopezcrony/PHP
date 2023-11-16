@@ -2,7 +2,7 @@
 <div class="card m-5 p-5" style="width: 40rem;">
   <h2>Registro</h2>
   <div class="card-body">
-<form id="registro" class="container">
+<form id="registro" class="container" method="post">
 <div class="form-group row"> 
                             <div class="col-sm-12 mb-3 mb-sm-0">
                                 <input name="document" type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="Documento de identidad">
